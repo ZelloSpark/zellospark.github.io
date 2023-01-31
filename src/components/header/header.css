@@ -1,0 +1,118 @@
+header{
+    height: 100vh;
+    padding-top: 11rem;
+    /* padding-top: 7rem; */
+    overflow: hidden;
+}
+
+.header__container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* =================== CTA ================= */
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+}
+
+/* =================== HEADER SOCIALS ================= */
+.header__socials{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* =================== HEADER MOBILE SOCIALS ================= */
+.header__mobile-socials{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.header__mobile-socials a{
+    padding: 0.8rem;
+    border-radius: 10rem;
+    display: flex;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* =================== ME ================= */
+.me{
+    background: linear-gradient(var(--color-primary),transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* =================== SCROLL DOWN ================= */
+.scroll__down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* ================= MEDIA QUERIES (LARGE & MEDIUM DEVICES) ================== */
+@media screen and (min-width: 601px){
+    .header__mobile-socials{
+        display: none;
+    }
+}
+
+/* ================= MEDIA QUERIES (MEDIUM DEVICES) ================== */
+@media screen and (max-width: 1024px){
+    header{
+        height: 68vh;
+    }
+}
+
+/* ================= MEDIA QUERIES (SMALL DEVICES) ================== */
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 2.5rem !important;
+        /* font-size: 2.5rem; */
+    }
+
+    header{
+        padding-top: 11rem !important;
+        /* padding-top: 5rem; */
+        height: 90vh;
+        /* height: 100vh;   */
+    }
+
+    .header__socials, .scroll__down{
+        display: none;
+    }
+}
+
+/* ================= MEDIA QUERIES (SMALLER DEVICES) ================== */
+@media screen and (max-width: 389px){
+    header{
+        padding-top: 6.1rem !important;
+    }
+}
