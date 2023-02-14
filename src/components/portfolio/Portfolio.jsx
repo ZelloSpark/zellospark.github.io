@@ -18,7 +18,7 @@ const Portfolio = () => {
           <h3>AR Cube: Augmented Reality App</h3>
           <div className="portfolio__item-cta">
           <a href='https://play.google.com/store/apps/details?id=com.ZelloSpark.ARCube' className='btn btn-primary' target='_blank'>Play Store</a>
-            <a href='https://blogs.zellospark.com/2023/02/projects-arcube.html.html' className='btn' target='_blank'>Blog</a>
+            <a href='https://blogs.zellospark.com/2023/02/projects-arcube.html' className='btn' target='_blank'>Blog</a>
           </div>
         </article>
         <article className='portfolio__item'>
