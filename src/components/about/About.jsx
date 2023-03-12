@@ -30,7 +30,7 @@ const About = () => {
             <article className='about__card'>
               <FaGooglePlay className='about__icon'/>
               <h5>Published</h5>
-              <small>1 Application</small>
+              <small>2 Applications</small>
             </article>
 
             <article className='about__card'>
